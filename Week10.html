@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cupcakes</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Week10.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-slate">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cuppiecakes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Buy Cuppiecakes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Nope</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row my-3">
+            <!-- Cupcakes Container -->
+            <div class="col d-flex" id="cupcakes-container"></div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md">
+                <!-- Cart Container -->
+                <ul class="list-group" id="cart-container"></ul>
+                <button class="btn btn-success btn-lg my-3 float-end">Check Out</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-none">
+        <!-- Empty Cart Template -->
+        <li id="empty-cart-template" class="list-group-item text-muted text-center p-3">Your cart is empty</li>
+        <!-- Cart Item Template -->
+        <li id="cart-item-template" class="list-group-item p-3">
+            <span id="item-number" class="badge bg-primary rounded-pill me-1">0</span>
+            <span id="item-text">Text</span>
+            <button id="remove-button" class="btn btn-danger btn-sm float-end">-</button>
+        </li>
+        <!-- Cupcake Template -->
+        <div id="cupcake-template" class="card mb-3 w-25 mx-2">
+            <img src="file:///Users/apple/Documents/Promineo/Week10/pics/Strawberry.jpeg" id="cupcake-image" class="card-img-top" alt="slate metal cupcake">
+            <div class="card-body">
+                <h5 id="cupcake-title" class="card-title">Cupcake Title</h5>
+                <p id="cupcake-description" class="card-text">Info about this cupcake</p>
+                <a id="cupcake-buy-button" href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <footer class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    Copyright 2022
+                </div>
+                <div class="col-md-3">
+                    <ul class="list-unstyled footer-links">
+                        <li><a class="btn btn-link text-success" href="#">One Cupcake</a></li>
+                        <li><a class="btn btn-link text-success" href="#">Two Cupcakes</a></li>
+                        <li><a class="btn btn-link text-success" href="#">Three Cupcakes</a></li>
+                        <li><a class="btn btn-link text-success" href="#">Four Cupcakes</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    Hopefully these are the best cupcakes you've ever tasted
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Week10.js"></script>
+</body>
+</html>

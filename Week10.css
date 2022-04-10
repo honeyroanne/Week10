@@ -1,0 +1,13 @@
+.bg-slate {
+    background-color: #176277;
+}
+
+.jumbo {
+    background-image: url(file:///Users/apple/Documents/Promineo/Week10/pics/Strawberry.jpeg);
+    background-size: cover;
+    height: 500px;
+}
+
+footer {
+    background-color: pink
+}
